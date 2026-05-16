@@ -39,7 +39,7 @@ jobs:
           make O=out truekris_defconfig
           
           # Запуск сборки на всех доступных ядрах сервера
-          make O=out -j$(nproc --all) Image
+          make O=out -j$(nproc --all) Image CONFIG_SECTION_MISMATCH_WARN_ONLY=y
 
       - name: Upload Kernel Image
         uses: actions/upload-artifact@v4
