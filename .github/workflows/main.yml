@@ -39,7 +39,7 @@ jobs:
           make O=out truekris_defconfig
           
           # Запуск сборки на всех доступных ядрах сервера
-          make O=out -j$(nproc --all)
+          make O=out -j$(nproc --all) Image
 
       - name: Upload Kernel Image
         uses: actions/upload-artifact@v4
