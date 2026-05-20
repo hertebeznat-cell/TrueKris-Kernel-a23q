@@ -452,8 +452,8 @@ CONFIG_KUSER_HELPERS=y
 # Hypervisor
 #
 # CONFIG_UH is not set
-# CONFIG_RKP is not set
-# CONFIG_KDP is not set
+CONFIG_RKP=y
+CONFIG_KDP=y
 # CONFIG_KDP_CRED is not set
 # CONFIG_KDP_NS is not set
 #
